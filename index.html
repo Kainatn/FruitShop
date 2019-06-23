@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2>Fruit Shop</h2>
+        </div>
+    </header>
+    <main>
+        <section class="rupees">
+            <div id="my_price">
+                <p>I have Rs. </p>
+                <div> 
+                    <input type="number"  onmouseout="getval()"  id="myPriceInput" placeholder="Enter Money">
+                </div>
+            </div>
+        </section>
+
+        <section id="total">
+            <div id="totaal">
+                <h2>Your total is Rs.</h2>
+                 <span id="totalPriceSpan" >0</span>
+            </div>
+        </section>
+        <section id="shop">
+            <div class="fruits">
+                <div class="sec_1">
+                    <h5>Rs. 10</h5>
+                </div>
+                <figure><img src="images/apple.png" alt="Apple">
+                    <figcaption>Apple</figcaption>
+                </figure>
+                <button class="minus" onclick="appledecrease()">-</button>
+                <input type="number" id="numberapple"  class="numberapple"disabled >
+                <button class="plus" onclick="appleincrement()">+</button>
+            </div>
+            <div class="fruits">
+                <div class="sec_1">
+                    <h5>Rs. 15</h5>
+                </div>
+                <figure><img src="images/orange.png" alt="Orange">
+                    <figcaption>Orange</figcaption>
+                </figure>
+                <button class="minus" onclick="orangedecrease()">-</button>
+                <input type="number"  id="numberorange"  class="numberapple" disabled>
+                <button class="plus" onclick="orangeincrement()">+</button>
+            </div>
+
+            <div class="fruits">
+                <div class="sec_1">
+                    <h5>Rs. 7</h5>
+                </div>
+                <figure><img src="images/banana.png" alt="Banana">
+                    <figcaption>Banana</figcaption>
+                </figure>
+                <button class="minus" onclick="bananadecrease()">-</button>
+                <input type="number" min="0" value="0"  id="numberbanana"  class="numberapple" disabled>
+                <button class="plus" onclick="bananaincrement()">+</button>
+            </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

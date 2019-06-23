@@ -1,0 +1,161 @@
+fbody{
+    margin: 0;
+    padding: 0;
+}
+/*header css*/
+
+header  div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header,section#shop{
+    color: white;
+    background-image: linear-gradient(#42474c, #5f677a, #42474c);
+}
+
+/*main and  sections css*/
+
+main section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2em;
+} 
+
+/*1st section css*/
+
+#my_price{
+    border: solid;
+   flex-direction: column;
+   display: contents;
+}
+section.rupees {
+    margin: 1em;
+}
+#my_price p{
+    font-weight: bold;
+    font-size: 20px;
+}
+div>#myPriceInput {
+ 
+    border: 1px solid #D5D2D2;
+    border-radius: 30px;
+    padding: 1em 2em;
+    margin: 0 1em;
+     outline: none;
+}
+
+/*2nd section css*/
+section#total {
+    background-color: #EFE2CC;
+    margin: 0;
+    padding: 4em;
+}
+h2 {
+    font-size:xx-large;
+}
+span#totalPriceSpan {
+    color: red;
+    font-size: 3em;
+; 
+}
+div#totaal {
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+
+
+}
+
+/*3rd section css*/
+
+section#shop {
+flex-direction: row;
+    margin: 0;
+    padding: 4em 0px;
+    justify-content: space-evenly;
+     flex-wrap: wrap;
+    }
+img{
+    width: 150px;
+}
+figure {
+    margin: 20px;
+}
+.fruits {
+    text-align: center;
+    border-radius: 10px;
+    border: solid#F3F3F3;
+    background-color: #F3F3F3;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 1em;
+
+}
+div.sec_1{
+    background-color: #346E34;
+    padding:0.5px;
+    color: beige;
+    margin: -3px;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+
+}
+button{
+    padding: 10px;
+
+}
+
+.plus{
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    padding: 10px;
+    color: white;
+    background-color: #424847;
+    border-radius: 0px 20px 20px 0px; 
+    margin-left: -4px;
+}
+.minus{
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+    border:none;
+    outline: none;
+    padding: 10px;
+    margin-right: -4px;
+    border-radius: 20px 0px 0px 20px; 
+    color: white;
+    background-color: #424847;
+  }
+
+.numberapple{
+       flex: 1;
+        width:35%; 
+        height: 9%;
+       border:1px solid black;
+       padding:5px;
+       font-size: 20px;
+       text-align: center;
+       outline:none;
+       background-image: linear-gradient(#9e9fa0,#F3F3F3);
+
+}
+
+/* Media Query css*/
+@media only screen and (max-width: 900px) {
+   .fruits  {
+    margin-bottom: 2em;
+    }
+    div#totaal {
+        flex-direction: column;
+        
+    }
+    input#amount {
+       text-align: center;
+    }
+
+  }
